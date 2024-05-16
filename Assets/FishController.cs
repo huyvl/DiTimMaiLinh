@@ -25,13 +25,10 @@ public class FishController : MonoBehaviour {
             Vector3 direction = new Vector3(horizontal, vertical, 0).normalized;
             transform.Translate(direction * speed * Time.deltaTime, Space.World);
 
-            // Calculate the angle for the fish to face based on movement direction
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-            // Set the rotation based on the calculated angle
             transform.rotation = Quaternion.Euler(0, 0, angle);
 
-            // Flip the sprite based on horizontal movement direction
             if (horizontal < 0)
             {
                 spriteRenderer.flipY = true;
