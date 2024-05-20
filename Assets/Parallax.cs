@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Parallax : MonoBehaviour {
-    private Vector3 startPos;
+    private float length;
+    private float startXpos;
 
-    private float repeatWidth;
+    public GameObject cam;
+    public float parallaxEffect;
+    
     // Start is called before the first frame update
     void Start() {
-        startPos = transform.position;
-        repeatWidth = gameObject.GetComponent<BoxCollider2D>().size.x/2;
+        startXpos = transform.position.x;
+        length = gameObject.GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (transform.position.x < startPos.x - repeatWidth) {
-            transform.position = startPos;
-        }
+    void Update() {
+        float temp = (cam.transform.position.x * (1 - parallaxEffect));
+        float dist = (cam.transform.position.x * parallaxEffect);
+        transform.position = new Vector3(startXpos + dist, transform.position.y, transform.position.z);
+        if (temp > startXpos + length) startXpos += length;
+        else if (temp < startXpos - length) startXpos -= length;
     }
 }
