@@ -20,6 +20,7 @@ public class FishController : MonoBehaviour {
 
     void HandleManualInput()
     {
+        if(!GameManager.Instance.isInPlay) return;
         if(isStun) return;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");

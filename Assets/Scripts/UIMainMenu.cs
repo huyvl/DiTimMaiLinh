@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIMainMenu : MonoBehaviour
-{
+public class UIMainMenu : MonoBehaviour {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +14,10 @@ public class UIMainMenu : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PlayButton() {
+        GameManager.Instance.StartGame();
+        this.gameObject.SetActive(false);
     }
 }
