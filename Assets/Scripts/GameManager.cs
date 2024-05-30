@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,9 +20,11 @@ public class GameManager : MonoBehaviour
         }
     }
     public GameObject mainmenu;
+    public GameObject levelselect;
+    public GameObject mainmenuCamera;
     public GameObject storyTeller;
     public GameObject[] levelList;
-    private int currentLevel = 0;
+    public int currentLevel = 0;
     [HideInInspector]
     public bool isInPlay = false;
     void Awake()
@@ -29,8 +32,13 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void PlayLevel(int level) {
+        levelselect.SetActive(false);
+        levelList[level].gameObject.SetActive(true);      
+    }
     public void StartGame() {
         mainmenu.gameObject.SetActive(false);
-        levelList[currentLevel].gameObject.SetActive(true);        
+        // levelList[currentLevel].gameObject.SetActive(true);        
+        levelselect.SetActive(true);
     }
 }
