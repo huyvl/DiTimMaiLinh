@@ -58,5 +58,8 @@ public class FishController : MonoBehaviour {
         else if (other.CompareTag("Obstacles")) {
             StartCoroutine(DizzyEffect());
         }
+        else if (other.CompareTag("Cave")) {
+            GameManager.Instance.QuizTime();
+        }
     }
 }
