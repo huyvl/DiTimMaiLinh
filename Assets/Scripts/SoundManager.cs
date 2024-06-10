@@ -31,6 +31,7 @@ public class SoundManager : MonoBehaviour
             if (_objectSound != null)
             {
                 Sound _sound = _objectSound.track.Find(y => (y.name == _name));
+                Debug.LogError(_sound);
                 if (_sound != null && !_sound.source.isPlaying)
                 {
                     _sound.source.Play();

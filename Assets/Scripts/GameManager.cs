@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public int currentLevel = 0;
     [HideInInspector]
     public bool isInPlay = false;
+    
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartGame() {
         mainmenu.gameObject.SetActive(false);
+        mainmenuCamera.gameObject.SetActive(false);
         levelselect.SetActive(true);
         SoundManager.instance.Play(TypeSFX.SFX,"Click");
     }

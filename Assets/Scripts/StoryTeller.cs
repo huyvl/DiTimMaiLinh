@@ -33,7 +33,6 @@ public class StoryTeller : MonoBehaviour {
 
         if (currentStoryData.storyList[count] != null) {
             this.GetComponent<Image>().sprite = currentStoryData.storyList[count].background;
-            Debug.Log(count);
             currentCoroutine = StartCoroutine(DisplayDialogue(currentStoryData.storyList[count].storyDialouge));
             isRunning = true;
         }

@@ -7,10 +7,27 @@ public class FishController : MonoBehaviour {
 
     private SpriteRenderer spriteRenderer;
     private bool isStun;
+    public float upperBound = 5f; 
+    public float lowerBound = -5f;
 
-    void Start()
+    private int health = 3;
+    
+    public int Health
     {
+        get { return health; }
+        set
+        {
+            health = Mathf.Clamp(value, 0, 3);
+        }
+    }
+    void Start() {
+        Health = 3;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        var mainCamera = Camera.main;
+        float halfCameraHeight = mainCamera.orthographicSize;
+
+        lowerBound = mainCamera.transform.position.y - halfCameraHeight;
+        upperBound = mainCamera.transform.position.y + halfCameraHeight;
     }
 
     void Update()
@@ -20,25 +37,26 @@ public class FishController : MonoBehaviour {
 
     void HandleManualInput()
     {
-        if(!GameManager.Instance.isInPlay) return;
-        if(isStun) return;
+        if (!GameManager.Instance.isInPlay) return;
+        if (isStun) return;
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
         if (horizontal != 0 || vertical != 0)
         {
             Vector3 direction = new Vector3(horizontal, vertical, 0).normalized;
-            transform.Translate(direction * speed * Time.deltaTime, Space.World);
+            Vector3 newPosition = transform.position + direction * speed * Time.deltaTime;
 
-            // float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            //
-            // transform.rotation = Quaternion.Euler(0, 0, angle);
+            newPosition.y = Mathf.Clamp(newPosition.y, lowerBound, upperBound);
+
+            transform.position = newPosition;
 
             if (horizontal < 0)
             {
                 spriteRenderer.flipX = true;
             }
-            else
+            else if (horizontal > 0)
             {
                 spriteRenderer.flipX = false;
             }
@@ -54,6 +72,7 @@ public class FishController : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Coin")) {
             Destroy(other.gameObject);
+            SoundManager.instance.Play(TypeSFX.SFX,"Eat");
         }
         else if (other.CompareTag("Obstacles")) {
             StartCoroutine(DizzyEffect());
