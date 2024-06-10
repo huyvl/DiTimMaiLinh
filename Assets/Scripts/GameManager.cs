@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
-
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
@@ -20,16 +21,25 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
+    
+    [Header("UI Panel")]
     public GameObject mainmenu;
     public GameObject levelselect;
     public GameObject mainmenuCamera;
     public GameObject questionMgr;
     public GameObject storyTeller;
+    public GameObject hud;
     public GameObject[] levelList;
     public int currentLevel = 0;
     [HideInInspector]
     public bool isInPlay = false;
     
+    public TextMeshProUGUI scoreText;
+    private int coinScore = 0;
+    public void UpdateScore(int value) {
+        coinScore += value;
+        scoreText.text = "X" + coinScore.ToString();
+    }
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -45,6 +55,7 @@ public class GameManager : MonoBehaviour
         mainmenu.gameObject.SetActive(false);
         mainmenuCamera.gameObject.SetActive(false);
         levelselect.SetActive(true);
+        hud.gameObject.SetActive(true);
         SoundManager.instance.Play(TypeSFX.SFX,"Click");
     }
 

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcb1ec51e86883f44b2fdbc8d1f42aaf, type: 3}
-  m_Name: QuestionMap1 1
+  m_Name: QuestionMap1_EN
   m_EditorClassIdentifier: 
   questionList:
   - Questions: What color is the sky during the day?
@@ -62,64 +62,4 @@ MonoBehaviour:
     - answer: Elephant
       isCorrectAnswer: 0
     - answer: Rabbit
-      isCorrectAnswer: 0
-  - Questions: What is the color of ripe bananas?
-    answerList:
-    - answer: Red
-      isCorrectAnswer: 0
-    - answer: Blue
-      isCorrectAnswer: 0
-    - answer: Yellow
-      isCorrectAnswer: 1
-    - answer: Green
-      isCorrectAnswer: 0
-  - Questions: How many legs does a spider have?
-    answerList:
-    - answer: 6
-      isCorrectAnswer: 0
-    - answer: 4
-      isCorrectAnswer: 0
-    - answer: 8
-      isCorrectAnswer: 1
-    - answer: 10
-      isCorrectAnswer: 0
-  - Questions: What do we use to see things far away?
-    answerList:
-    - answer: Telescope
-      isCorrectAnswer: 1
-    - answer: Microscope
-      isCorrectAnswer: 0
-    - answer: Binoculars
-      isCorrectAnswer: 0
-    - answer: Magnifying glass
-      isCorrectAnswer: 0
-  - Questions: What is the name of the closest star to Earth?
-    answerList:
-    - answer: Mars
-      isCorrectAnswer: 0
-    - answer: Sun
-      isCorrectAnswer: 1
-    - answer: Moon
-      isCorrectAnswer: 0
-    - answer: Jupiter
-      isCorrectAnswer: 0
-  - Questions: Which season comes after summer?
-    answerList:
-    - answer: Winter
-      isCorrectAnswer: 0
-    - answer: Spring
-      isCorrectAnswer: 0
-    - answer: Autumn
-      isCorrectAnswer: 1
-    - answer: Monsoon
-      isCorrectAnswer: 0
-  - Questions: What is the main job of the heart?
-    answerList:
-    - answer: Pump blood
-      isCorrectAnswer: 1
-    - answer: Digest food
-      isCorrectAnswer: 0
-    - answer: Think
-      isCorrectAnswer: 0
-    - answer: Breathe
       isCorrectAnswer: 0

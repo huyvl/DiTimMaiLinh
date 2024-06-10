@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class Answer {
     [TextArea(10,10)]
     public string answer;
+    [TextArea(10,10)]
     public bool isCorrectAnswer;
 }
 

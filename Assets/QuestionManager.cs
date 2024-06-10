@@ -68,8 +68,6 @@ public class QuestionManager : MonoBehaviour {
         {
             Debug.Log("Wrong answer!");
         }
-
-        
     }
     
 }
