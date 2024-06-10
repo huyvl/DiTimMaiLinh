@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb1ec51e86883f44b2fdbc8d1f42aaf, type: 3}
+  m_Name: QuestionMap5_EN
+  m_EditorClassIdentifier: 
+  questionList:
+  - Questions: How many sides does a hexagon have?
+    answerList:
+    - answer: Four
+      isCorrectAnswer: 0
+    - answer: Five
+      isCorrectAnswer: 0
+    - answer: Six
+      isCorrectAnswer: 1
+    - answer: Seven
+      isCorrectAnswer: 0
+  - Questions: What instrument is used to measure temperature?
+    answerList:
+    - answer: Barometer
+      isCorrectAnswer: 0
+    - answer: Thermometer
+      isCorrectAnswer: 1
+    - answer: Hydrometer
+      isCorrectAnswer: 0
+    - answer: Anemometer
+      isCorrectAnswer: 0
+  - Questions: Which famous scientist developed the theory of relativity?
+    answerList:
+    - answer: Isaac Newton
+      isCorrectAnswer: 0
+    - answer: Marie Curie
+      isCorrectAnswer: 0
+    - answer: Albert Einstein
+      isCorrectAnswer: 1
+    - answer: Galileo Galilei
+      isCorrectAnswer: 0
+  - Questions: What is the smallest unit of life?
+    answerList:
+    - answer: Atom
+      isCorrectAnswer: 0
+    - answer: Cell
+      isCorrectAnswer: 1
+    - answer: Molecule
+      isCorrectAnswer: 0
+    - answer: Organ
+      isCorrectAnswer: 0
+  - Questions: What is the capital city of Japan?
+    answerList:
+    - answer: Beijing
+      isCorrectAnswer: 0
+    - answer: Seoul
+      isCorrectAnswer: 0
+    - answer: Tokyo
+      isCorrectAnswer: 1
+    - answer: Bangkok
+      isCorrectAnswer: 0

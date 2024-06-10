@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb1ec51e86883f44b2fdbc8d1f42aaf, type: 3}
+  m_Name: QuestionMap2_EN
+  m_EditorClassIdentifier: 
+  questionList:
+  - Questions: What is the opposite of hot?
+    answerList:
+    - answer: Warm
+      isCorrectAnswer: 0
+    - answer: Cold
+      isCorrectAnswer: 1
+    - answer: Wet
+      isCorrectAnswer: 0
+    - answer: Dry
+      isCorrectAnswer: 0
+  - Questions: Which shape has three sides?
+    answerList:
+    - answer: Square
+      isCorrectAnswer: 0
+    - answer: Circle
+      isCorrectAnswer: 0
+    - answer: Triangle
+      isCorrectAnswer: 1
+    - answer: Rectangle
+      isCorrectAnswer: 0
+  - Questions: What is the primary source of energy for life on Earth?
+    answerList:
+    - answer: The Moon
+      isCorrectAnswer: 0
+    - answer: The Sun
+      isCorrectAnswer: 1
+    - answer: Stars
+      isCorrectAnswer: 0
+    - answer: Wind
+      isCorrectAnswer: 0
+  - Questions: Which holiday is known for costumes and trick-or-treat?
+    answerList:
+    - answer: Christmas
+      isCorrectAnswer: 0
+    - answer: Easter
+      isCorrectAnswer: 0
+    - answer: Halloween
+      isCorrectAnswer: 1
+    - answer: Thanksgiving
+      isCorrectAnswer: 0
+  - Questions: How many days are there in a week?
+    answerList:
+    - answer: Five
+      isCorrectAnswer: 0
+    - answer: Six
+      isCorrectAnswer: 0
+    - answer: Seven
+      isCorrectAnswer: 1
+    - answer: Eight
+      isCorrectAnswer: 0

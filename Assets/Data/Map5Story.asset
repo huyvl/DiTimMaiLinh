@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b8cdc13a9a4a24c9ff4a8d01de7dbd, type: 3}
+  m_Name: Map5Story
+  m_EditorClassIdentifier: 
+  storyList:
+  - background: {fileID: 21300000, guid: 21cdb78ae42a8ef48b4b53207667084b, type: 3}
+    storyDialouge: "A while later, Dory got caught in a fishing net along with a
+      school of fish. Nemo suggested saving her by having the fish swim downward,
+      a trick the other fish had used in the tank to save him from the dentist's
+      net. Although Marlin feared that letting Nemo do this might cause him to lose
+      him again, he realized he had to let Nemo try. The plan worked; they broke
+      the winch, freeing Dory and the entire school of fish. Marlin reunited with
+      Nemo and apologized for being overprotective.\r\nUpon returning home, Marlin
+      allowed Nemo to have adventures at school. He impressed and gained the respect
+      of the neighbors for crossing the ocean to find his son, especially after his
+      credibility was boosted by the appearance of three sharks.\r"

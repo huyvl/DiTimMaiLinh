@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0b8cdc13a9a4a24c9ff4a8d01de7dbd, type: 3}
-  m_Name: Map1Story
+  m_Name: Map1Story 1
   m_EditorClassIdentifier: 
   storyList:
   - background: {fileID: 21300000, guid: 21cdb78ae42a8ef48b4b53207667084b, type: 3}
