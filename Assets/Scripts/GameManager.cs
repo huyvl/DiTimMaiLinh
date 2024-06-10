@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         mainmenu.gameObject.SetActive(false);
         mainmenuCamera.gameObject.SetActive(false);
         levelselect.SetActive(true);
-        hud.gameObject.SetActive(true);
+        // hud.gameObject.SetActive(true);
         SoundManager.instance.Play(TypeSFX.SFX,"Click");
     }
 
