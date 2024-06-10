@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     
     public TextMeshProUGUI scoreText;
     private int coinScore = 0;
+    private LevelManager currentActiveLevel;
     public void UpdateScore(int value) {
         coinScore += value;
         scoreText.text = "X" + coinScore.ToString();
@@ -45,11 +46,15 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         SoundManager.instance.Play(TypeSFX.BGM,"BGM");
     }
-    
+
+    public LevelManager GetCurrentActiveLevel() {
+        return currentActiveLevel;
+    }
     public void PlayLevel(int level) {
         SoundManager.instance.Play(TypeSFX.SFX,"Click");
         levelselect.SetActive(false);
-        levelList[level].gameObject.SetActive(true);      
+        levelList[level].gameObject.SetActive(true);
+        currentActiveLevel = levelList[level].GetComponent<LevelManager>();
     }
     public void StartGame() {
         mainmenu.gameObject.SetActive(false);

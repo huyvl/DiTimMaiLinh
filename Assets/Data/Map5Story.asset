@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Map5Story
   m_EditorClassIdentifier: 
   storyList:
-  - background: {fileID: 21300000, guid: 21cdb78ae42a8ef48b4b53207667084b, type: 3}
-    storyDialouge: "A while later, Dory got caught in a fishing net along with a
-      school of fish. Nemo suggested saving her by having the fish swim downward,
-      a trick the other fish had used in the tank to save him from the dentist's
-      net. Although Marlin feared that letting Nemo do this might cause him to lose
-      him again, he realized he had to let Nemo try. The plan worked; they broke
-      the winch, freeing Dory and the entire school of fish. Marlin reunited with
-      Nemo and apologized for being overprotective.\r\nUpon returning home, Marlin
-      allowed Nemo to have adventures at school. He impressed and gained the respect
-      of the neighbors for crossing the ocean to find his son, especially after his
-      credibility was boosted by the appearance of three sharks.\r"
+  - background: {fileID: 21300000, guid: 0ad242087d636de48839c0be61c66f7f, type: 3}
+    storyDialouge: A while later, Dory got caught in a fishing net along with a school
+      of fish. Nemo suggested saving her by having the fish swim downward, a trick
+      the other fish had used in the tank to save him from the dentist's net. Although
+      Marlin feared that letting Nemo do this might cause him to lose him again,
+      he realized he had to let Nemo try. The plan worked; they broke the winch,
+      freeing Dory and the entire school of fish. Marlin reunited with Nemo and apologized
+      for being overprotective.
+  - background: {fileID: 21300000, guid: 0ad242087d636de48839c0be61c66f7f, type: 3}
+    storyDialouge: Upon returning home, Marlin allowed Nemo to have adventures at
+      school. He impressed and gained the respect of the neighbors for crossing the
+      ocean to find his son, especially after his credibility was boosted by the
+      appearance of three sharks.

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,6 +13,10 @@ public class QuestionManager : MonoBehaviour {
     public TextMeshProUGUI questionText;
     public List<Button> answerButtons;
     // Start is called before the first frame update
+    private void OnEnable() {
+        currentQuestionData = GameManager.Instance.GetCurrentActiveLevel().QuestionData;
+    }
+
     void Start()
     {
         DisplayQuestion(currentQuestionIndex);

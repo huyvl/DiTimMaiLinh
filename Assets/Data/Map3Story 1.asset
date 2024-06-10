@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Map3Story 1
   m_EditorClassIdentifier: 
   storyList:
-  - background: {fileID: 21300000, guid: 21cdb78ae42a8ef48b4b53207667084b, type: 3}
+  - background: {fileID: 21300000, guid: d14b438511fe95042a617a09b37bea1d, type: 3}
     storyDialouge: "A school of fish showed them the way to the East Australian Current
       and advised them to go through the trench leading there. However, only Dory
       received the directions, and due to her forgetfulness, she couldn't remember.
