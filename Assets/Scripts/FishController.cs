@@ -65,7 +65,10 @@ public class FishController : MonoBehaviour {
 
     IEnumerator  DizzyEffect() {
         isStun = true;
+        Camera.main.GetComponent<CameraFollow>().enabled = false;
+        StartCoroutine(Camera.main.GetComponent<CameraShake>().Shake(0.1f, 0.2f));
         yield return new WaitForSeconds(1f);
+        Camera.main.GetComponent<CameraFollow>().enabled = true;
         isStun = false;
     }
     //TO-DO: Tach phan xu ly nay ra sau
@@ -73,6 +76,7 @@ public class FishController : MonoBehaviour {
         if (other.CompareTag("Coin")) {
             Destroy(other.gameObject);
             SoundManager.instance.Play(TypeSFX.SFX,"Eat");
+            GameManager.Instance.UpdateScore(1);
         }
         else if (other.CompareTag("Obstacles")) {
             StartCoroutine(DizzyEffect());

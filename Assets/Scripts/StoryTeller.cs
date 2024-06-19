@@ -25,7 +25,9 @@ public class StoryTeller : MonoBehaviour {
     public void UpdateStoryTeller(StoryData storyTellerData) {
         if (storyTellerData == null || storyTellerData.storyList == null || count >= storyTellerData.storyList.Count) {
             this.gameObject.SetActive(false);
+            GameManager.Instance.SetupHUD();
             GameManager.Instance.isInPlay = true;
+            count = 0;
             return;
         }
 
