@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -27,12 +28,15 @@ public class GameManager : MonoBehaviour
     public GameObject questionMgrPanel;
     public GameObject storyTellerPanel;
     public GameObject hudPanel;
+    public GameObject howToPlayPanel;
+    
     [HideInInspector]
     public bool isInPlay = false;
     #region Game Variable
     private int coinScore = 0;
     private int gameScore = 0;
-    private int playTime;
+    private int playTime = 0;
+    private int health = 6;
 
     #endregion
 
@@ -42,9 +46,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI playTimeText;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI coinText;
-    
+    public List<GameObject> heartList;
     [Header("Level List")]
     public GameObject[] levelList;
+    [HideInInspector]
     public int currentLevel = 0;
     private LevelManager currentActiveLevel;
 
@@ -56,6 +61,17 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         SoundManager.instance.Play(TypeSFX.BGM,"BGM");
+       
+    }
+
+    private IEnumerator UpdateTimer()
+    {
+        while (true)
+        {
+            playTime += 1;
+            playTimeText.text = playTime.ToString();
+            yield return new WaitForSeconds(1f);
+        }
     }
 
     public LevelManager GetCurrentActiveLevel() {
@@ -66,6 +82,7 @@ public class GameManager : MonoBehaviour
         levelSelectPanel.SetActive(false);
         levelList[level].gameObject.SetActive(true);
         currentActiveLevel = levelList[level].GetComponent<LevelManager>();
+        playTime = 0;
     }
     public void StartGame() {
         mainMenuPanel.gameObject.SetActive(false);
@@ -78,9 +95,9 @@ public class GameManager : MonoBehaviour
         hudPanel.gameObject.SetActive(true);
         charNameText.text = currentActiveLevel.charName.ToString().Trim();
         mapNameText.text = currentActiveLevel.mapName.ToString().Trim();
-        playTimeText.text = currentActiveLevel.playTime.ToString();
-        playTime = currentActiveLevel.playTime;
-
+        // playTimeText.text = currentActiveLevel.playTime.ToString();
+        // playTime = currentActiveLevel.playTime;
+        StartCoroutine(UpdateTimer());
     }
     public void QuizTime() {
         isInPlay = false;
@@ -98,5 +115,15 @@ public class GameManager : MonoBehaviour
         levelList[currentLevel].gameObject.SetActive(false);
         currentLevel++;
         PlayLevel(currentLevel);
+    }
+
+    public void UpdateHeartStatus() {
+        if (health > 0) {
+            heartList[health - 1].gameObject.SetActive(false);
+            health--;
+        }
+        else {
+            
+        }
     }
 }
