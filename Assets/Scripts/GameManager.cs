@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
@@ -80,9 +81,21 @@ public class GameManager : MonoBehaviour
     public void PlayLevel(int level) {
         // SoundManager.instance.Play(TypeSFX.SFX,"Click");
         levelSelectPanel.SetActive(false);
-        levelList[level].gameObject.SetActive(true);
-        currentActiveLevel = levelList[level].GetComponent<LevelManager>();
+        currentActiveLevel = Instantiate(levelList[level], new Vector3(0, 0, 0), quaternion.identity).GetComponent<LevelManager>();
+        // levelList[level].gameObject.SetActive(true);
+        // currentActiveLevel = levelList[level].GetComponent<LevelManager>();
+        playTime = 0;   
+    }
+
+    public void ResetLevel() {
+        hudPanel.gameObject.SetActive(false);
+        Destroy(currentActiveLevel);
+        currentActiveLevel = Instantiate(levelList[currentLevel], new Vector3(0, 0, 0), quaternion.identity).GetComponent<LevelManager>();
         playTime = 0;
+        foreach (GameObject heart in heartList) {
+            heart.SetActive(true);
+        }
+        health = 6;
     }
     public void StartGame() {
         mainMenuPanel.gameObject.SetActive(false);
@@ -121,9 +134,9 @@ public class GameManager : MonoBehaviour
         if (health > 0) {
             heartList[health - 1].gameObject.SetActive(false);
             health--;
-        }
-        else {
-            
+            if (health == 0) {
+                ResetLevel();
+            }
         }
     }
 }

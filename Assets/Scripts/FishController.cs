@@ -80,7 +80,7 @@ public class FishController : MonoBehaviour {
         }
         else if (other.CompareTag("Obstacles")) {
             StartCoroutine(DizzyEffect());
-            GameManager.Instance.UpdateHeartStatus();
+            GameManager.Instance.UpdateHeartStatus();   
         }
         else if (other.CompareTag("Cave")) {
             GameManager.Instance.QuizTime();
