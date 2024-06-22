@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public GameObject storyTellerPanel;
     public GameObject hudPanel;
     public GameObject howToPlayPanel;
+    public GameObject settingPanel;
     
     [HideInInspector]
     public bool isInPlay = false;
@@ -89,14 +90,17 @@ public class GameManager : MonoBehaviour
 
     public void ResetLevel() {
         hudPanel.gameObject.SetActive(false);
-        Destroy(currentActiveLevel);
+        Destroy(currentActiveLevel.gameObject);
         currentActiveLevel = Instantiate(levelList[currentLevel], new Vector3(0, 0, 0), quaternion.identity).GetComponent<LevelManager>();
         playTime = 0;
         foreach (GameObject heart in heartList) {
             heart.SetActive(true);
         }
         health = 6;
+        coinScore = 0;
+        StopAllCoroutines();
     }
+    
     public void StartGame() {
         mainMenuPanel.gameObject.SetActive(false);
         mainMenuCamera.gameObject.SetActive(false);
@@ -108,6 +112,7 @@ public class GameManager : MonoBehaviour
         hudPanel.gameObject.SetActive(true);
         charNameText.text = currentActiveLevel.charName.ToString().Trim();
         mapNameText.text = currentActiveLevel.mapName.ToString().Trim();
+        coinText.text = "X" + coinScore.ToString();
         // playTimeText.text = currentActiveLevel.playTime.ToString();
         // playTime = currentActiveLevel.playTime;
         StartCoroutine(UpdateTimer());
@@ -125,7 +130,8 @@ public class GameManager : MonoBehaviour
     }
 
     public void NextLevel() {
-        levelList[currentLevel].gameObject.SetActive(false);
+        Destroy(currentActiveLevel.gameObject);
+        // levelList[currentLevel].gameObject.SetActive(false);
         currentLevel++;
         PlayLevel(currentLevel);
     }

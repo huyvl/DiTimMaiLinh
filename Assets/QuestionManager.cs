@@ -14,6 +14,7 @@ public class QuestionManager : MonoBehaviour {
     public List<Button> answerButtons;
     // Start is called before the first frame update
     private void OnEnable() {
+        currentQuestionIndex = 0;
         currentQuestionData = GameManager.Instance.GetCurrentActiveLevel().QuestionData;
     }
 

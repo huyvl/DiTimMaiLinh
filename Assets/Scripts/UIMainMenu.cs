@@ -13,4 +13,9 @@ public class UIMainMenu : MonoBehaviour {
         SoundManager.instance.Play(TypeSFX.SFX,"Click");
     }
 
+    public void SettingsButton() {
+        GameManager.Instance.settingPanel.SetActive(true);
+        SoundManager.instance.Play(TypeSFX.SFX,"Click");
+    }
+
 }
