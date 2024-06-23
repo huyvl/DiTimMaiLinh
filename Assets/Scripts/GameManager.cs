@@ -115,12 +115,12 @@ public class GameManager : MonoBehaviour
     
     public void StartGame() {
         mainMenuPanel.gameObject.SetActive(false);
-        mainMenuCamera.gameObject.SetActive(false);
         levelSelectPanel.SetActive(true);
         SoundManager.instance.Play(TypeSFX.SFX,"Click");
     }
 
     public void SetupHUD() {
+        mainMenuCamera.gameObject.SetActive(false);
         hudPanel.gameObject.SetActive(true);
         mapNameText.text = currentActiveLevel.mapName.ToString().Trim();
         coinText.text = "X" + coinScore.ToString();
