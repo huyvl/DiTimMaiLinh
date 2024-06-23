@@ -1893,7 +1893,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyData: {fileID: 11400000, guid: 65e593e2920613346aa179b7ba9ddbc8, type: 2}
   vietnameseStoryData: {fileID: 11400000, guid: f08ea2268d0afa744b03f7991b38a139, type: 2}
-  QuestionData: {fileID: 11400000, guid: c49ff7057263ff845bde2df7e867e998, type: 2}
+  QuestionData: {fileID: 11400000, guid: 103f79c6a8d38274f8483e7a8b960107, type: 2}
+  vietnameseQuestionData: {fileID: 11400000, guid: 650471174cdd0054ab9a7bb3659dfe50, type: 2}
   playTime: 1000
   mapName: 02
   charName: MARLIN

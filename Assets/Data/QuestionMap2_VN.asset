@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb1ec51e86883f44b2fdbc8d1f42aaf, type: 3}
+  m_Name: QuestionMap2_VN
+  m_EditorClassIdentifier: 
+  questionList:
+  - Questions: "\u0110i\u1EC1u g\xEC tr\xE1i ng\u01B0\u1EE3c v\u1EDBi n\xF3ng?"
+    answerList:
+    - answer: "\u1EA4m"
+      isCorrectAnswer: 0
+    - answer: "L\u1EA1nh"
+      isCorrectAnswer: 1
+    - answer: "\u1EA8m \u01B0\u1EDBt"
+      isCorrectAnswer: 0
+    - answer: "Kh\xF4"
+      isCorrectAnswer: 0
+  - Questions: "H\xECnh n\xE0o c\xF3 ba c\u1EA1nh?"
+    answerList:
+    - answer: "H\xECnh vu\xF4ng"
+      isCorrectAnswer: 0
+    - answer: "H\xECnh tr\xF2n"
+      isCorrectAnswer: 0
+    - answer: "H\xECnh tam gi\xE1c"
+      isCorrectAnswer: 1
+    - answer: "H\xECnh ch\u1EEF nh\u1EADt"
+      isCorrectAnswer: 0
+  - Questions: "Ngu\u1ED3n n\u0103ng l\u01B0\u1EE3ng ch\xEDnh cho s\u1EF1 s\u1ED1ng
+      tr\xEAn Tr\xE1i \u0110\u1EA5t l\xE0 g\xEC?"
+    answerList:
+    - answer: "M\u1EB7t Tr\u0103ng"
+      isCorrectAnswer: 0
+    - answer: "M\u1EB7t Tr\u1EDDi"
+      isCorrectAnswer: 1
+    - answer: "C\xE1c ng\xF4i sao"
+      isCorrectAnswer: 0
+    - answer: "Gi\xF3"
+      isCorrectAnswer: 0
+  - Questions: "K\u1EF3 ngh\u1EC9 n\xE0o \u0111\u01B0\u1EE3c bi\u1EBFt \u0111\u1EBFn
+      v\u1EDBi vi\u1EC7c m\u1EB7c ph\u1EE5c trang v\xE0 \u0111i xin k\u1EB9o?"
+    answerList:
+    - answer: "Gi\xE1ng Sinh"
+      isCorrectAnswer: 0
+    - answer: "L\u1EC5 Ph\u1EE5c Sinh"
+      isCorrectAnswer: 0
+    - answer: "L\u1EC5 Halloween"
+      isCorrectAnswer: 1
+    - answer: "L\u1EC5 T\u1EA1 \u01A0n"
+      isCorrectAnswer: 0
+  - Questions: "C\xF3 bao nhi\xEAu ng\xE0y trong m\u1ED9t tu\u1EA7n?"
+    answerList:
+    - answer: "N\u0103m"
+      isCorrectAnswer: 0
+    - answer: "S\xE1u"
+      isCorrectAnswer: 0
+    - answer: "B\u1EA3y"
+      isCorrectAnswer: 1
+    - answer: "T\xE1m"
+      isCorrectAnswer: 0

@@ -15,7 +15,17 @@ public class QuestionManager : MonoBehaviour {
     // Start is called before the first frame update
     private void OnEnable() {
         currentQuestionIndex = 0;
-        currentQuestionData = GameManager.Instance.GetCurrentActiveLevel().QuestionData;
+        string selectedLanguage = PlayerPrefs.GetString("SelectedLanguage", "English");
+        if (selectedLanguage == "English")
+        {
+            currentQuestionData = GameManager.Instance.GetCurrentActiveLevel().QuestionData;
+        }
+        else if (selectedLanguage == "Vietnamese")
+        {
+            currentQuestionData = GameManager.Instance.GetCurrentActiveLevel().vietnameseQuestionData;
+
+        }
+        
     }
 
     void Start()

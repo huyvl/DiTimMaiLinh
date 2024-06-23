@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour {
     public StoryData storyData;
     public StoryData vietnameseStoryData;
     public QuestionData QuestionData;
+    public QuestionData vietnameseQuestionData;
     [Header("Map Time")]
     public int playTime;
     [Header("Map Name")] 

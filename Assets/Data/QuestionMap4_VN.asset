@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb1ec51e86883f44b2fdbc8d1f42aaf, type: 3}
+  m_Name: QuestionMap4_VN
+  m_EditorClassIdentifier: 
+  questionList:
+  - Questions: "C\xF3 bao nhi\xEAu ch\xE2u l\u1EE5c tr\xEAn Tr\xE1i \u0110\u1EA5t?"
+    answerList:
+    - answer: "N\u0103m"
+      isCorrectAnswer: 0
+    - answer: "S\xE1u"
+      isCorrectAnswer: 0
+    - answer: "B\u1EA3y"
+      isCorrectAnswer: 1
+    - answer: "T\xE1m"
+      isCorrectAnswer: 0
+  - Questions: "H\xE0nh tinh n\xE0o g\u1EA7n M\u1EB7t Tr\u1EDDi nh\u1EA5t?"
+    answerList:
+    - answer: "Tr\xE1i \u0110\u1EA5t"
+      isCorrectAnswer: 0
+    - answer: Sao Kim
+      isCorrectAnswer: 0
+    - answer: "Sao Thu\u1EF7"
+      isCorrectAnswer: 1
+    - answer: "Sao Ho\u1EA3"
+      isCorrectAnswer: 0
+  - Questions: "\u0110i\u1EC3m \u0111\xF3ng b\u0103ng c\u1EE7a n\u01B0\u1EDBc l\xE0
+      bao nhi\xEAu \u0111\u1ED9 C?"
+    answerList:
+    - answer: "0 \u0111\u1ED9"
+      isCorrectAnswer: 1
+    - answer: "32 \u0111\u1ED9"
+      isCorrectAnswer: 0
+    - answer: "100 \u0111\u1ED9"
+      isCorrectAnswer: 0
+    - answer: "-10 \u0111\u1ED9"
+      isCorrectAnswer: 0
+  - Questions: "Qu\u1ED1c gia n\xE0o n\u1ED5i ti\u1EBFng v\u1EDBi vi\u1EC7c ph\xE1t
+      minh ra pizza?"
+    answerList:
+    - answer: "Ph\xE1p"
+      isCorrectAnswer: 0
+    - answer: "Trung Qu\u1ED1c"
+      isCorrectAnswer: 0
+    - answer: "\xDD"
+      isCorrectAnswer: 1
+    - answer: "Hy L\u1EA1p"
+      isCorrectAnswer: 0
+  - Questions: "S\xE2u b\u01B0\u1EDBm bi\u1EBFn th\xE0nh g\xEC?"
+    answerList:
+    - answer: "\u1EBEch"
+      isCorrectAnswer: 0
+    - answer: "B\u01B0\u1EDBm"
+      isCorrectAnswer: 1
+    - answer: "R\u1EAFn"
+      isCorrectAnswer: 0
+    - answer: Chim
+      isCorrectAnswer: 0

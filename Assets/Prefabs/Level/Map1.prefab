@@ -161,6 +161,7 @@ MonoBehaviour:
   storyData: {fileID: 11400000, guid: 8fe7e8c7f5f064d4aa609f21add64c4e, type: 2}
   vietnameseStoryData: {fileID: 11400000, guid: 4465828dae49c6c4cbd5c09722502a85, type: 2}
   QuestionData: {fileID: 11400000, guid: a0ad1896f2587b84abaa4a6a2832a199, type: 2}
+  vietnameseQuestionData: {fileID: 11400000, guid: 504d4e8d22a309041a23631b88fa1258, type: 2}
   playTime: 1000
   mapName: 01
   charName: MARLIN
