@@ -132,6 +132,7 @@ public class GameManager : MonoBehaviour
         // levelList[currentLevel].gameObject.SetActive(false);
         currentLevel++;
         PlayLevel(currentLevel);
+        StopAllCoroutines();
     }
 
     public void UpdateHeartStatus() {
@@ -149,5 +150,6 @@ public class GameManager : MonoBehaviour
         hudPanel.gameObject.SetActive(false);
         mainMenuPanel.gameObject.SetActive(true);
         mainMenuCamera.gameObject.SetActive(true);
+        StopAllCoroutines();
     }
 }
