@@ -18,6 +18,7 @@ public class StoryTeller : MonoBehaviour {
             storyTextField.text += letter;
             yield return new WaitForSeconds(0.05f);
         }
+
         isRunning = false;
         count++;
     }
@@ -47,7 +48,8 @@ public class StoryTeller : MonoBehaviour {
                 storyTextField.text = currentStoryData.storyList[count].storyDialouge;
                 count++;
                 isRunning = false;
-            } else {
+            }
+            else {
                 UpdateStoryTeller(currentStoryData);
             }
         }

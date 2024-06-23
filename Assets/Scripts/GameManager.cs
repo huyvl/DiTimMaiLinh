@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
     #endregion
 
     [Header("HUD")] 
-    public TextMeshProUGUI charNameText;
     public TextMeshProUGUI mapNameText;
     public TextMeshProUGUI playTimeText;
     public TextMeshProUGUI scoreText;
@@ -110,7 +109,6 @@ public class GameManager : MonoBehaviour
 
     public void SetupHUD() {
         hudPanel.gameObject.SetActive(true);
-        charNameText.text = currentActiveLevel.charName.ToString().Trim();
         mapNameText.text = currentActiveLevel.mapName.ToString().Trim();
         coinText.text = "X" + coinScore.ToString();
         // playTimeText.text = currentActiveLevel.playTime.ToString();

@@ -39,9 +39,8 @@ public class QuestionManager : MonoBehaviour {
             {
                 answerButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = question.answerList[i].answer.Trim();
                 answerButtons[i].gameObject.SetActive(true);
-                // Add listener to the button to handle answer click
                 int answerIndex = i;
-                answerButtons[i].onClick.RemoveAllListeners(); // Remove previous listeners
+                answerButtons[i].onClick.RemoveAllListeners();
                 answerButtons[i].onClick.AddListener(() => {
                     SoundManager.instance.Play(TypeSFX.SFX,"Click");
                     OnAnswerSelected(answerIndex);

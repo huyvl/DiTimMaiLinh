@@ -84,7 +84,6 @@ public class FishController : MonoBehaviour {
         }
         else if (other.CompareTag("Cave")) {
             GameManager.Instance.QuizTime();
-            Debug.Log("here");
         }
     }
 }
