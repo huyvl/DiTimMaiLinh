@@ -592,7 +592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7143287226511854281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.009778, y: 0.41404778, z: 0.0961813}
+  m_LocalPosition: {x: -1.766, y: 0.41404778, z: 0.0961813}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7143287226511854282}
-  xOffset: 0
+  xOffset: 1.5
 --- !u!114 &2934623844218047936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2439,6 +2439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: doryfile_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2337648841104154288, guid: c9a4e6d0bfb406a4da2fce4547a28613, type: 3}
+      propertyPath: playerFish
+      value: 
+      objectReference: {fileID: 7143287226511854282}
     - target: {fileID: 7945783335853401205, guid: c9a4e6d0bfb406a4da2fce4547a28613, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2485,26 +2489,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9a4e6d0bfb406a4da2fce4547a28613, type: 3}
---- !u!1 &3197832223427257948 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1537461135925312118, guid: c9a4e6d0bfb406a4da2fce4547a28613, type: 3}
-  m_PrefabInstance: {fileID: 4122715292883622954}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3362008413059037963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3197832223427257948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c79086a976c58c4facf191c9def9f4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerFish: {fileID: 7143287226511854282}
-  followSpeed: 4
-  followDistance: 1
 --- !u!4 &6301596286078728287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7945783335853401205, guid: c9a4e6d0bfb406a4da2fce4547a28613, type: 3}

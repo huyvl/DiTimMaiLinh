@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 893d7b800324a450984c64ee2597ec9e
+guid: ad0ec545faf7a4e469effe7fe5e3780c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doryfile_0
+      name: nemook_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 100
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a9fdea1d0326408baa418ec5df0309a
-      internalID: 912989161
+      spriteID: bea8b8ee5e999fc4b84633dcf6dce21c
+      internalID: 1741871130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doryfile_1
+      name: nemook_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 100
         y: 0
-        width: 64
+        width: 100
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb90e7d2c593f4e2a9281220fa547f52
-      internalID: -1964737206
+      spriteID: b3c729a2a2b465f45bc198c77a6a7848
+      internalID: 1177978035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doryfile_2
+      name: nemook_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 200
         y: 0
-        width: 64
+        width: 100
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 939577d229d7d4960b948c94d9979d7a
-      internalID: -405535134
+      spriteID: fea5cbd4c0ac51246aa27cb92109b2e0
+      internalID: -574356333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doryfile_3
+      name: nemook_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 300
         y: 0
-        width: 64
+        width: 100
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6e5f62a6fc694718be0885674d2bc5c
-      internalID: 1685815826
+      spriteID: 6c792a5abfde4904fa94c075ac0df4bc
+      internalID: 1074421772
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      doryfile_2: -405535134
-      doryfile_3: 1685815826
-      doryfile_1: -1964737206
-      doryfile_0: 912989161
+      nemook_1: 1177978035
+      nemook_0: 1741871130
+      nemook_3: 1074421772
+      nemook_2: -574356333
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
