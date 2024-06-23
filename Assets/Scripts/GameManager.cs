@@ -143,4 +143,11 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public void ToHomeMenu() {
+        Destroy(currentActiveLevel.gameObject);
+        hudPanel.gameObject.SetActive(false);
+        mainMenuPanel.gameObject.SetActive(true);
+        mainMenuCamera.gameObject.SetActive(true);
+    }
 }
