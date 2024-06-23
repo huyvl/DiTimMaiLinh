@@ -9,7 +9,7 @@ public class UIMainMenu : MonoBehaviour {
     }
 
     public void HowToPlayButton() {
-        GameManager.Instance.howToPlayPanel.SetActive(true);
+        GameManager.Instance.OpenHowToPlay();
         SoundManager.instance.Play(TypeSFX.SFX,"Click");
     }
 

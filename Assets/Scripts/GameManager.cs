@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     public GameObject storyTellerPanel;
     public GameObject hudPanel;
     public GameObject howToPlayPanel;
+    public GameObject howToPlayPanelVietnamese;
     public GameObject settingPanel;
     
     [HideInInspector]
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public int currentLevel = 0;
     private LevelManager currentActiveLevel;
+    public string currentLanguage;
 
     public void UpdateScore(int value) {
         coinScore += value;
@@ -62,7 +64,7 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         SoundManager.instance.Play(TypeSFX.BGM,"BGM");
-       
+        currentLanguage = PlayerPrefs.GetString("SelectedLanguage", "English");
     }
 
     private IEnumerator UpdateTimer()
@@ -75,6 +77,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void OpenHowToPlay() {
+        var currentLanguage = PlayerPrefs.GetString("SelectedLanguage", "English");
+        if (currentLanguage == "English")
+        {
+            howToPlayPanel.gameObject.SetActive(true);
+        }
+        else if (currentLanguage == "Vietnamese")
+        {
+            howToPlayPanelVietnamese.gameObject.SetActive(true);
+        }
+    }
     public LevelManager GetCurrentActiveLevel() {
         return currentActiveLevel;
     }
