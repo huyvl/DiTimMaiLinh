@@ -19,8 +19,8 @@ public class UISettings : MonoBehaviour
         muteToggle.isOn = isMuted;
         unmuteToggle.isOn = !isMuted;
 
-        muteToggle.onValueChanged.AddListener(OnMuteToggleChanged);
-        unmuteToggle.onValueChanged.AddListener(OnUnmuteToggleChanged);
+        muteToggle.onValueChanged.AddListener(isOn => OnToggleChanged(isOn));
+        unmuteToggle.onValueChanged.AddListener(isOn => OnToggleChanged(!isOn));
         
         string selectedLanguage = PlayerPrefs.GetString(LANGUAGE_PREF_KEY, "English");
         englishToggle.isOn = selectedLanguage == "English";
@@ -35,11 +35,13 @@ public class UISettings : MonoBehaviour
         {
             SetLanguage("English");
             vietnameseToggle.isOn = false;
+            englishToggle.isOn = true;
         }
         else
         {
             SetLanguage("Vietnamese");
             englishToggle.isOn = false;
+            vietnameseToggle.isOn = true;
         }
     }
     
@@ -49,27 +51,25 @@ public class UISettings : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    void OnMuteToggleChanged(bool isOn)
+    void OnToggleChanged(bool isMuteToggle)
     {
-        if (isOn)
+        if (isMuteToggle)
         {
             SoundManager.instance.MuteAll();
             PlayerPrefs.SetInt(MUTE_PREF_KEY, 1);
             PlayerPrefs.Save();
 
             unmuteToggle.isOn = false;
+            muteToggle.isOn = true;
         }
-    }
-
-    void OnUnmuteToggleChanged(bool isOn)
-    {
-        if (isOn)
+        else
         {
             SoundManager.instance.UnMuteAll();
             PlayerPrefs.SetInt(MUTE_PREF_KEY, 0);
             PlayerPrefs.Save();
 
             muteToggle.isOn = false;
+            unmuteToggle.isOn = true;
         }
     }
 }
