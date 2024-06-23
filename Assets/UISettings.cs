@@ -7,8 +7,11 @@ public class UISettings : MonoBehaviour
 {
     public Toggle muteToggle;
     public Toggle unmuteToggle;
+    public Toggle englishToggle;
+    public Toggle vietnameseToggle;
 
     private const string MUTE_PREF_KEY = "IsMuted";
+    private const string LANGUAGE_PREF_KEY = "SelectedLanguage";
 
     void Start()
     {
@@ -18,6 +21,32 @@ public class UISettings : MonoBehaviour
 
         muteToggle.onValueChanged.AddListener(OnMuteToggleChanged);
         unmuteToggle.onValueChanged.AddListener(OnUnmuteToggleChanged);
+        
+        string selectedLanguage = PlayerPrefs.GetString(LANGUAGE_PREF_KEY, "English");
+        englishToggle.isOn = selectedLanguage == "English";
+        vietnameseToggle.isOn = selectedLanguage == "Vietnamese";
+        
+        englishToggle.onValueChanged.AddListener(isOn => OnLanguageToggleChanged(isOn));
+        vietnameseToggle.onValueChanged.AddListener(isOn => OnLanguageToggleChanged(!isOn));
+    }
+    void OnLanguageToggleChanged(bool isEnglishToggle)
+    {
+        if (isEnglishToggle)
+        {
+            SetLanguage("English");
+            vietnameseToggle.isOn = false;
+        }
+        else
+        {
+            SetLanguage("Vietnamese");
+            englishToggle.isOn = false;
+        }
+    }
+    
+    void SetLanguage(string language)
+    {
+        PlayerPrefs.SetString(LANGUAGE_PREF_KEY, language);
+        PlayerPrefs.Save();
     }
 
     void OnMuteToggleChanged(bool isOn)

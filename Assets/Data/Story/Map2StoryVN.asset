@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b8cdc13a9a4a24c9ff4a8d01de7dbd, type: 3}
+  m_Name: Map2StoryVN
+  m_EditorClassIdentifier: 
+  storyList:
+  - background: {fileID: 21300000, guid: ce8955abe22b7b3488caa392a8a330f2, type: 3}
+    storyDialouge: "Marlin v\xE0 Dory \u0111\xE3 t\xECm \u0111\u01B0\u1EE3c m\u1EB7t
+      n\u1EA1 c\u1EE7a ng\u01B0\u1EDDi th\u1EE3 l\u1EB7n nh\u01B0ng Dory \u0111\xE3
+      b\u1ECB th\u01B0\u01A1ng v\xE0 ch\u1EA3y m\xE1u sau khi tranh gi\xE0nh c\xE1i
+      m\u1EB7t n\u1EA1, t\xECnh c\u1EDD khu\u1EA5y \u0111\u1ED9ng \u0111\u1EBFn Bruce(c\xE1
+      m\u1EADp) l\xE0m h\u1EAFn tr\u1EDF n\xEAn \u0111i\xEAn lo\u1EA1n v\xE0 bu\u1ED9c
+      ph\u1EA3i ch\u1EA1y tr\u1ED1n \u0111\u1EBFn m\u1ED9t c\xE1i r\xE3nh s\xE2u
+      sau khi su\xFDt b\u1ECB \u0103n th\u1ECBt. Dory nh\u1EDB r\u1EB1ng c\xF4 c\xF3
+      th\u1EC3 \u0111\u1ECDc v\xE0 h\u1ECD t\xECm ra r\u1EB1ng Nemo \u0111\xE3 t\u1EDBi
+      Sydney, \xDAc. C\u1EA3 hai ch\xFA c\xE1 Dory v\xE0 Marlin \u0111\xE3 nh\xECn
+      th\u1EA5y m\u1ED9t ng\u1ECDn \u0111\xE8n, nh\u01B0ng sau \u0111\xF3 th\u1EA5y
+      \u0111\xF3 l\xE0 m\u1ED9t con c\xE1 c\xF3 r\u0103ng s\u1EAFt - c\xE1 l\u1ED3ng
+      \u0111\xE8n, v\xE0 n\xF3 \u0111ang c\xF3 \xFD \u0111\u1ECBnh \u0103n th\u1ECBt
+      c\u1EA3 hai b\u1ECDn h\u1ECD\u2026"

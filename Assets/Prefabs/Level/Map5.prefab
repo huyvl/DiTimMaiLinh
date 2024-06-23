@@ -842,7 +842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7675d67dacbf72d43bd6bb857a039faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyData: {fileID: 11400000, guid: 1488eee435474e14dafbbfa8236a20c9, type: 2}
+  storyData: {fileID: 11400000, guid: 55ae1277b18716440a0c45e45da0b894, type: 2}
+  vietnameseStoryData: {fileID: 11400000, guid: 1488eee435474e14dafbbfa8236a20c9, type: 2}
   QuestionData: {fileID: 11400000, guid: c5909af22e3de784e8ecaa9aaffb96f2, type: 2}
   playTime: 1000
   mapName: 05
@@ -1207,7 +1208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6811960273398158851}
-  xOffset: 2.5
+  xOffset: 0
 --- !u!114 &6045452724473031463
 MonoBehaviour:
   m_ObjectHideFlags: 0

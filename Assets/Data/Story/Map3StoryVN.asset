@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b8cdc13a9a4a24c9ff4a8d01de7dbd, type: 3}
+  m_Name: Map3StoryVN
+  m_EditorClassIdentifier: 
+  storyList:
+  - background: {fileID: 21300000, guid: d14b438511fe95042a617a09b37bea1d, type: 3}
+    storyDialouge: "M\u1ED9t \u0111\xE0n c\xE1 \u0111\xE3 ch\u1EC9 d\u1EABn h\u1ECD
+      \u0111\u01B0\u1EDDng t\u1EDBi d\xF2ng h\u1EA3i l\u01B0u ph\xEDa \u0111\xF4ng
+      Australia, v\xE0 c\u0169ng khuy\xEAn h\u1ECD n\xEAn \u0111i v\xE0o h\u1EBBm
+      d\u1EABn t\u1EDBi \u0111\xF3. Tuy nhi\xEAn, ch\u1EC9 c\xF3 Dory \u0111\u01B0\u1EE3c
+      ch\u1EC9 d\u1EABn v\xE0 do \u0111\xE3ng tr\xED n\xEAn kh\xF4ng nh\u1EDB. Marlin
+      kh\xF4ng bi\u1EBFt n\xEAn d\u1EABn Dory \u0111i l\xEAn tr\xEAn h\u1EBBm n\xFAi.
+      Do v\u1EADy h\u1ECD \u0111\xE3 su\xFDt ch\u1EBFt v\xEC m\u1ED9t b\u1EA7y s\u1EE9a
+      \u2026"

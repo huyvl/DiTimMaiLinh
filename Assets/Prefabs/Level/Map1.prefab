@@ -158,7 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7675d67dacbf72d43bd6bb857a039faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyData: {fileID: 11400000, guid: 4465828dae49c6c4cbd5c09722502a85, type: 2}
+  storyData: {fileID: 11400000, guid: 8fe7e8c7f5f064d4aa609f21add64c4e, type: 2}
+  vietnameseStoryData: {fileID: 11400000, guid: 4465828dae49c6c4cbd5c09722502a85, type: 2}
   QuestionData: {fileID: 11400000, guid: a0ad1896f2587b84abaa4a6a2832a199, type: 2}
   playTime: 1000
   mapName: 01

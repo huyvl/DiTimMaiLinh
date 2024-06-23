@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b8cdc13a9a4a24c9ff4a8d01de7dbd, type: 3}
+  m_Name: Map5StoryVN
+  m_EditorClassIdentifier: 
+  storyList:
+  - background: {fileID: 21300000, guid: 0ad242087d636de48839c0be61c66f7f, type: 3}
+    storyDialouge: "M\u1ED9t l\xFAc sau, Dory b\u1ECB l\u1EA1c v\xE0o l\u01B0\u1EDBi
+      b\u1EAFt c\xE1 c\xF9ng m\u1ED9t \u0111\xE0n c\xE1 \u1EDF trong \u0111\xF3.
+      Nemo c\xF3 \xFD ki\u1EBFn \u0111\u1EC3 c\u1EE9u c\xF4 b\u1EB1ng c\xE1ch b\u1EA3o
+      \u0111\xE0n c\xE1 k\xE9o c\xE1i l\u01B0\u1EDBi xu\u1ED1ng, m\u1ED9t m\u01B0u
+      m\u1EB9o m\xE0 c\xE1c con c\xE1 kh\xE1c \u0111\xE3 l\xE0m trong b\u1EC3 \u0111\u1EC3
+      c\u1EE9u c\u1EADu kh\u1ECFi c\xE1i l\u01B0\u1EDBi v\u1EDBt c\xE1 c\u1EE7a \xF4ng
+      nha s\u0129. M\u1EB7c d\xF9 Marlin s\u1EE3 r\u1EB1ng cho Nemo l\xE0m vi\u1EC7c
+      n\xE0y s\u1EBD khi\u1EBFn anh m\u1EA5t c\u1EADu l\u1EA7n n\u1EEFa, anh v\u1EABn
+      nh\u1EADn ra r\u1EB1ng anh ph\u1EA3i \u0111\u1EC3 Nemo l\xE0m vi\u1EC7c n\xE0y.
+      Cu\u1ED9c v\u1EADn \u0111\u1ED9ng \u0111\u01B0\u1EE3c ti\u1EBFn h\xE0nh, h\u1ECD
+      l\xE0m \u0111\u1EE9t c\xE1i t\u1EDDi, gi\u1EA3i c\u1EE9u Dory c\xF9ng c\u1EA3
+      \u0111\xE0n c\xE1, v\xE0 \r\nMarlin \u0111o\xE0n t\u1EE5 v\u1EDBi Nemo v\xE0
+      xin l\u1ED7i c\u1EADu v\xEC \u0111\xE3 b\u1EA3o v\u1EC7 c\u1EADu qu\xE1 m\u1EE9c
+      c\u1EA7n thi\u1EBFt.\r"
+  - background: {fileID: 21300000, guid: 0ad242087d636de48839c0be61c66f7f, type: 3}
+    storyDialouge: "Khi tr\u1EDF v\u1EC1 nh\xE0, Marlin c\xF3 th\u1EC3 cho Nemo c\xF3
+      m\u1ED9t cu\u1ED9c phi\xEAu l\u01B0u \u1EDF tr\u01B0\u1EDDng, v\xE0 anh \u0111\xE3
+      g\xE2y \u1EA5n t\u01B0\u1EE3ng v\xE0 nh\u1EADn \u0111\u01B0\u1EE3c s\u1EF1
+      k\xEDnh tr\u1ECDng c\u1EE7a h\xE0ng x\xF3m v\xEC \u0111\xE3 b\u01A1i ngang
+      qua \u0111\u1EA1i d\u01B0\u01A1ng \u0111\u1EC3 t\xECm con trai, \u0111\u1EB7c
+      bi\u1EC7t sau khi s\u1EF1 t\xEDn nhi\u1EC7m c\u1EE7a anh \u0111\u01B0\u1EE3c
+      t\u0103ng c\u01B0\u1EDDng b\u1EDFi s\u1EF1 xu\u1EA5t hi\u1EC7n c\u1EE7a ba
+      con c\xE1 m\u1EADp."
