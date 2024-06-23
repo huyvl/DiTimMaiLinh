@@ -14,7 +14,6 @@ public class QuestionManager : MonoBehaviour {
     public List<Button> answerButtons;
     // Start is called before the first frame update
     private void OnEnable() {
-        currentQuestionIndex = 0;
         string selectedLanguage = PlayerPrefs.GetString("SelectedLanguage", "English");
         if (selectedLanguage == "English")
         {
@@ -25,13 +24,14 @@ public class QuestionManager : MonoBehaviour {
             currentQuestionData = GameManager.Instance.GetCurrentActiveLevel().vietnameseQuestionData;
 
         }
-        
-    }
-
-    void Start()
-    {
         DisplayQuestion(currentQuestionIndex);
     }
+
+    private void OnDisable() {
+        currentQuestionIndex = 0;
+        currentQuestionData = null;
+    }
+
     void DisplayQuestion(int questionIndex)
     {
         if (questionIndex >= currentQuestionData.questionList.Count)
